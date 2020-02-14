@@ -685,6 +685,10 @@ PRODUCT_COPY_FILES += \
     device/google/coral/audio/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sm8150-iaxxx-f2proto-snd-card/Codec_cal.acdb \
     device/google/coral/audio/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb
 
+# Google Device
+PRODUCT_PACKAGES += \
+    SystemUIGoogle
+
 
 # Audio ACDB workspace files for QACT
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
