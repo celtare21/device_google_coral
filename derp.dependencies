@@ -1,0 +1,29 @@
+[
+ {
+   "repository":  "DirtyUnicorns/android_device_google_coral-sepolicy",
+   "target_path": "device/google/coral-sepolicy",
+   "branch":      "q10x"
+ },
+ {
+   "repository":  "fsociety-kernel/pixel4",
+   "target_path": "kernel/google/floral",
+   "branch":      "bliss"
+ },
+ {
+   "repository":  "BlissRoms-Devices/proprietary_android_vendor_google",
+   "target_path": "vendor/google",
+   "branch":      "q"
+ },
+ {
+   "remote":  "gitlab",
+   "repository":  "DirtyUnicorns/android_vendor_images",
+   "target_path": "vendor/images",
+   "branch":      "q10x"
+ },
+ {
+   "remote":  "gitlab",
+   "repository":  "DirtyUnicorns/android_vendor_pixelgapps",
+   "target_path": "vendor/pixelgapps",
+   "branch":      "q10x"
+ }
+]
