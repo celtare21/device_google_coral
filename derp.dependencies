@@ -5,9 +5,9 @@
    "branch":      "q10x"
  },
  {
-   "repository":  "fsociety-kernel/pixel4",
+   "repository":  "DirtyUnicorns/android_kernel_google_floral",
    "target_path": "kernel/google/floral",
-   "branch":      "bliss"
+   "branch":      "q10x"
  },
  {
    "repository":  "BlissRoms-Devices/proprietary_android_vendor_google",

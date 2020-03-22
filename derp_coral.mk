@@ -21,7 +21,7 @@
 # lines, aosp and du, hence its name.
 #
 
-# Include Derp common configuration
+# Include Bliss common configuration
 include vendor/derp/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
@@ -31,7 +31,7 @@ $(call inherit-product, device/google/coral/aosp_coral.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-PRODUCT_NAME :=derp_coral
+PRODUCT_NAME := derp_coral
 PRODUCT_DEVICE := coral
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 4 XL
@@ -40,12 +40,12 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="coral" \
     TARGET_DEVICE="coral" \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ1B.200205.002 6084387 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ2A.200305.003 6156912 release-keys"
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ1B.200205.002/6084387:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/coral/coral:10/QQ1B.200205.002/6084387:user/release-keys
+    ro.build.fingerprint=google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/images/coral/vendor.img
 
