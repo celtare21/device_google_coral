@@ -1,5 +1,3 @@
-# Copyright (C) 2018-2019 The Dirty Unicorns Project
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -21,15 +19,15 @@
 # lines, aosp and du, hence its name.
 #
 
-# Include Bliss common configuration
+# Include Derp common configuration
 include vendor/derp/config/common_full_phone.mk
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, device/google/coral/aosp_coral.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/mainline.mk)
+
+$(call inherit-product, device/google/coral/device-coral.mk)
 
 PRODUCT_NAME := derp_coral
 PRODUCT_DEVICE := coral

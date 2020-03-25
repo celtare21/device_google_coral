@@ -20,6 +20,15 @@ include device/google/coral/device-common.mk
 
 DEVICE_PACKAGE_OVERLAYS += device/google/coral/coral/overlay
 
+# Don't build super.img
+PRODUCT_BUILD_SUPER_PARTITION := false
+
+PRODUCT_PACKAGES += \
+    PhotoTable \
+    WallpaperPicker \
+    WAPPushManager
+
 # Audio XMLs for coral
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy_volumes_coral.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
+    $(LOCAL_PATH)/configs/audio/audio_policy_volumes_coral.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
