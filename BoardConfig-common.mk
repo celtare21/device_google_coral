@@ -76,8 +76,8 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions (listed in the file) to be wiped under recovery.
-TARGET_RECOVERY_WIPE := device/google/coral/recovery.wipe
-TARGET_RECOVERY_FSTAB := device/google/coral/fstab.hardware
+TARGET_RECOVERY_WIPE := device/google/coral/configs/recovery.wipe
+TARGET_RECOVERY_FSTAB := device/google/coral/configs/fstab.hardware
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := \
     librecovery_ui_coral \
