@@ -949,7 +949,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.build.svn=17
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # ZRAM writeback
 PRODUCT_PROPERTY_OVERRIDES += \
