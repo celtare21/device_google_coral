@@ -883,7 +883,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/flame/init.flame.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.flame.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+    $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # power HAL
 PRODUCT_PACKAGES += \
